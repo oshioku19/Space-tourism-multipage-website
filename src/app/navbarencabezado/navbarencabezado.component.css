@@ -1,0 +1,91 @@
+.sectionRow1{
+    padding: 2rem;
+}
+
+.sectionLogo{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.contenedorLogo{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.imagenLogo{
+    width: 50px
+}
+
+.sectionNavBar{
+    backdrop-filter: blur(30px);
+    align-content: end;
+    justify-content: end;
+    align-items: end;
+    justify-items: end;
+    display: flex;
+    flex: wrap;
+}
+
+.bgNavbar{
+
+    align-content: end;
+    justify-content: end;
+    align-items: end;
+    justify-items: end;
+    display: flex;
+    flex: wrap;
+}
+
+.underlineTxt:hover::after{
+    text-decoration: underline;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(238, 244, 255);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.4s ease;
+    padding: 30px;
+}
+
+.nav-link::after { 
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: rgb(238, 244, 255);
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.nav-link:hover { color: rgb(238, 244, 255); }
+.nav-link:hover::after { width: 100%; }
+
+.sectionLinea{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    width: 30rem;
+    
+}
+
+.txtLinea{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 2px;
+    width: 40rem;
+    display: flex;
+    align-self: center;
+    position: absolute;
+    z-index: 1;
+}
+
